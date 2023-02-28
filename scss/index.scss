@@ -1,0 +1,12 @@
+// style reset, fonts and other 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import 'main/reset';
+@import 'main/general';
+@import 'main/mixins';
+
+// sections
+@import 'components/header';
+@import 'components/hero';
+@import 'components/features';
+@import 'components/highlights';
+@import 'components/footer';
