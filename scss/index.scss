@@ -1,0 +1,49 @@
+// style reset, fonts and other 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import 'reset';
+
+
+// global styles
+.wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100%;
+	font-family: 'Raleway', sans-serif;
+	background: black;
+	overflow: hidden;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+}
+
+// mixins
+@mixin button {
+	padding: 6px 28px;
+	font-size: 16px;
+	line-height: 22px;
+	color: white;
+	background: black;
+	border-radius: 50px;
+	transition: 0.2s;
+
+	&:hover {
+		color: black;
+		background: white;
+	}
+}
+@mixin title {
+	font-size: 110px;
+	line-height: 154px;
+	color: white;
+}
+
+
+// sections
+@import 'components/header';
+@import 'components/hero';
+@import 'components/features';
+@import 'components/highlights';
+@import 'components/footer';

@@ -1,0 +1,81 @@
+// features
+.features__title {
+	display: none;
+}
+.features__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-auto-rows: minmax(300px, 1fr);
+}
+.features__card {	
+	padding: 30px 40px;	
+}
+.features__card_sm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.features__card-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	justify-items: center;
+	gap: 20px 0;
+	height: 100%;
+	text-align: center;
+}
+.features__card-title {
+	max-width: 415px;
+	font-size: 40px;
+	line-height: 44px;	
+	color: white;
+}
+.features__decor-title {
+	font-size: 30px;
+	color: white;
+}
+.features__card-desc {
+	max-width: 405px;
+	font-size: 16px;
+	line-height: 22px;
+	color: white;
+}
+.features__card-link {
+	@include button;
+}
+.features__card_bg_blue {
+	background: rgba(74, 0, 255, 1);
+}
+.features__card_bg_green {
+	background: rgba(0, 255, 157, 1);	
+}
+.features__card_bg_orange {
+	background: rgba(255, 139, 0, 1);
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (max-width: 900px) {
+	.features__card-title {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+	.features__card-title {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.features__list {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
